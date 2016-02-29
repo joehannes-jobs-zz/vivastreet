@@ -10,7 +10,8 @@ import tpl from "views/components/avatar.jade!";
 	restrict: "E",
 	scope: {
 		"force": "@",
-        "team": "@"
+        "team": "@",
+        "size": "@"
 	}
 })
 @Controller({

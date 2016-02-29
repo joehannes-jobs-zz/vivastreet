@@ -22,5 +22,4 @@ export default class HitbuttonController extends Ctrl {
     "img.hitbutton::click" () {
         this.$scope.$emit("hit");
     }
-
 }
