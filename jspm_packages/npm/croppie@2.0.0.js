@@ -1,0 +1,1 @@
+module.exports = require("npm:croppie@2.0.0/croppie.js");

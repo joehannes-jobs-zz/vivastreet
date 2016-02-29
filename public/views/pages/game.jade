@@ -1,0 +1,13 @@
+.ui.two.column.relaxed.grid.padded(ng-cloak)
+	.column
+		.ui.items
+			.item.ui.three.column.grid
+				.column(ng-repeat="types in flow")
+					heartslevel(type="{{types.type}}" lifes="{{types.name.length}}")
+			.item
+				avatar.block.tiny.middled(team="you")
+
+	.ui.vertical.divider: hitbutton
+	.column &nbsp;
+		.ui.feed
+			feedmsg(ng-repeat="entry in feed | orderBy: '-tstamp'" avatar="{{entry.avatar}}" msg="{{entry.msg}}")

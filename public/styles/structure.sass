@@ -1,0 +1,59 @@
+header[menu]
+	display: block
+	width: 100%
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 10
+
+footer[imprint]
+	display: block
+	width: 100%
+	height: auto
+	position: fixed
+	top: 100%
+	left: 0
+	z-index: 11
+	margin-top: -35px
+	transition: all .2s ease
+	&:hover
+		transform: translateY(-100%)
+		margin-top: 0px
+	.two.column.grid .column
+		padding: 10px 50px 0px 50px !important
+	.vertical.space
+		height: 35px
+
+main
+	display: block
+	width: 100%
+	height: 100%
+	position: absolute
+	overflow-y: scroll
+	top: 0
+	left: 0
+	z-index: 1
+	padding: 100px 50px 50px 50px
+	background: url("assets/bg/halftone.png") 100%;
+
+	.block
+		text-align: center
+		img.image
+			box-shadow: 0 0 25px black
+	article.story
+		margin-bottom: 100px
+	.tiny.middled, .ui.card.middled
+		margin-left: 50%
+		transform: translateX(-50%)
+		img
+			width: 128px !important
+			height: 128px !important
+	.item.middled, .ui.card.middled
+		text-align: center
+	.ui.feed
+		max-height: 100%
+	.event
+		padding-left: 25px
+
+.clearfix
+	clear: both

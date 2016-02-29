@@ -1,0 +1,9 @@
+.ui.blackground.inverted.labeled.pointing.secondary.icon.menu
+	a.item(ng-repeat="item in menu" ui-sref="{{item.route}}")
+		i.icon(ng-class="item.icon") 
+		| {{item.name}}
+	.right.menu
+		h2.ui.horizontal.divider.blocked.writing {{battlecry}}
+		a.item.reset(ui-sref="intro")
+			i.icon.power 
+			| Reset

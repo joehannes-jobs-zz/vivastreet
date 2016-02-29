@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SystemJs-Jade plugin test</title>
+  <script src="jspm_packages/system.js"></script>
+  <script src="config.js"></script>
+  <script src="build.js"></script>
+</head>
+<body>
+    Wait a few seconds...
+  <script>
+     System.import('app')
+    .then(function(fn) {
+      document.body.innerHTML = fn({local1: 'no'});
+    })
+    .catch(function(err) {
+      console.log('ERROR: ', err);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+h4.ui.horizontal.divider imprint
+
+.ui.two.column.very.relaxed.grid.blackground
+	.column
+		.ui.link.card
+			.content
+				.header {{vcard.aka}}
+				.meta: span.category {{vcard.name}}
+				.description
+					a(href="mailto:{{vcard.email}}").block m@il
+					a(href="{{vcard.github}}" target="_blank").block github
+					a(href="{{vcard.profile}}" target="_blank").block stackoverflow
+					a(href="tel:{{vcard.phone}}").block {{vcard.phone}}
+	.column
+		img.ui.small.right.floated.middle.aligned.circular.bordered.image(src="assets/workerbee.png")
+
+.vertical.space.blackground (c) joehannes 2016

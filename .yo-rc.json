@@ -1,0 +1,9 @@
+{
+  "generator-derby": {
+    "project": "vivastreet",
+    "apps": [
+      "honeybee"
+    ],
+    "coffee": false
+  }
+}
