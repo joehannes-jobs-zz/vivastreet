@@ -11,13 +11,16 @@ html
 		link(href='https://fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css')
 		link(href='https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise' rel='stylesheet' type='text/css')
 		link(rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css")
-		script(src="https://code.jquery.com/jquery-2.2.1.min.js")
 		title Joehannes the Worker Bee
 		base(href="/")
 	body(ng-cloak)
 		block content
-		script(src="jspm_packages/system.js")
-		script(src="system.config.js")
-		script System.import("src/app");
+		script(src="https://code.jquery.com/jquery-2.2.1.min.js")
 		script(src="semantic/dist/semantic.min.js")
-		script(type='text/javascript', src='http://localhost:35729/livereload.js')
+		if environment == "development"
+			script(src="jspm_packages/system.js")
+			script(src="system.config.js")
+			script System.import("src/app");
+			script(type='text/javascript', src='http://localhost:35729/livereload.js')
+		if environment == "production"
+			script(src="build/app.js?bust=#{date}")

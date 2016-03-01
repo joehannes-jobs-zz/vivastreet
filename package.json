@@ -9,10 +9,18 @@
     "bower": "latest",
     "gulp": "latest",
     "gulp-jshint": "latest",
+    "gulp-jspm": "^0.5.7",
+    "gulp-karma": "0.0.5",
     "gulp-livereload": "^1.5.0",
     "gulp-nodemon": "latest",
+    "gulp-sourcemaps": "^1.6.0",
     "gulp-watch": "~0.6.4",
-    "jspm": "^0.16.30"
+    "jasmine-core": "^2.4.1",
+    "jspm": "^0.16.30",
+    "karma": "^0.13.21",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.7",
+    "karma-safari-launcher": "^0.1.1"
   },
   "dependencies": {
     "body-parser": "~1.0.0",

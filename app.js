@@ -31,7 +31,7 @@ app.use("/jspm_packages", express.static(path.join(__dirname, 'jspm_packages')))
 app.use("/semantic", express.static(path.join(__dirname, 'semantic')));
 
 app.get('/', function (req, res, next) {
-  res.render("index");
+  res.render("index", { environment: app.get('env'), date: (new Date()).getTime() });
 });
 
 /// catch 404 and forwarding to error handler
