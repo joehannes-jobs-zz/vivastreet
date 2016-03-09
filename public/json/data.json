@@ -1,0 +1,19 @@
+[{
+	"type": "queen",
+	"name": ["Maria"],
+	"score": [100],
+	"hitpoints": 8,
+	"total": 100
+}, {
+	"type": "workerbee",
+	"name": ["joehannes", "clone1", "clone2", "clone3", "clone4"],
+	"score": [75, 75, 75, 75, 75],
+	"hitpoints": 10,
+	"total": 75
+}, {
+	"type": "drone",
+	"name": ["Alisha", "Aisha", "Isha", "Smarli", "Josmiley", "Aurelie", "Baby", "Lilone"],
+	"score": [50, 50, 50, 50, 50, 50, 50, 50],
+	"hitpoints": 12,
+	"total": 50
+}]

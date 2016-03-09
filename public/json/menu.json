@@ -1,0 +1,17 @@
+[
+	{
+		"name": "Story",
+		"route": "intro",
+		"icon": "info circle"
+	},
+	{
+		"name": "Setup",
+		"route": "setup",
+		"icon": "wrench"
+	},
+	{
+		"name": "Play",
+		"route": "game",
+		"icon": "game"
+	}
+];
