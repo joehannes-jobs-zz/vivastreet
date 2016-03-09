@@ -10,31 +10,66 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine'],
+    frameworks: ['jspm', 'jasmine'],
 
+    jspm: {
+        config: './public/system.config.js',
+        loadFiles: [
+            './test/unit/*.spec.js',
+            './public/src/controllers/*.js',
+        ],
+        serveFiles: [
+            './public/src/controllers/*.js',
+            './test/unit/!(*.spec).js'
+        ]
+    },
 
-    // list of files / patterns to load in the browser
     files: [
-      'test/**/*.spec.js'
+        './node_modules/babel-polyfill/dist/polyfill.js'
     ],
 
+    proxies: {
+        '/public/': '/base/public/',
+        '/jspm_packages/': '/base/jspm_packages/',
+        '/test/': '/base/test/'
+    },
 
     // list of files to exclude
     exclude: [
     ],
 
 
-    // preprocess matching files before serving them to the browser
-    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
+    reporters: ['progress', 'coverage'],
+
     preprocessors: {
+        'unit/!(*spec).js': ['babel', 'sourcemap', 'coverage']
     },
 
+    babelPreprocessor: {
+        options: {
+            sourceMap: 'inline',
+            blacklist: []
+        },
+        sourceFileName: function(file) {
+            return file.originalPath;
+        }
+    },
 
-    // test results reporter to use
-    // possible values: 'dots', 'progress'
-    // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
-
+    coverageReporter: {
+        instrumenters: {isparta: require('isparta')},
+        instrumenter: {
+            'unit/*.js': 'isparta'
+        },
+        reporters: [
+            {
+                type: 'text-summary'
+            },
+            {
+                type: 'html',
+                dir: 'coverage/'
+            }
+        ]
+    },
 
     // web server port
     port: 9876,
@@ -55,12 +90,12 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome', 'Safari'],
+    browsers: ['PhantomJS'],
 
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false,
+    singleRun: true,
 
     // Concurrency level
     // how many browser should be started simultaneous

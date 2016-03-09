@@ -2,11 +2,13 @@
     "preset": "airbnb",
     "fileExtensions": [".js"],
 
-    "validateIndentation": 4,
+    "validateIndentation": "\t",
     "validateQuoteMarks": "\"",
     "requirePaddingNewLinesAfterBlocks": false,
     "requireTrailingComma": false,
     "requireLineFeedAtFileEnd": false,
+	"disallowMultipleVarDecl": false,
+	"maximumLineLength": 80,
 
     "excludeFiles": [
         "build/modules/**",
