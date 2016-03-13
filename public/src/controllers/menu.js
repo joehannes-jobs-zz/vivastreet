@@ -6,4 +6,4 @@ import Menu from "src/classes/controllers/menu";
 	name: "Menu",
 	deps: ["LocalStorage", "$rootScope"]
 })
-export default Menu;
+export default class MenuController extends Menu {};

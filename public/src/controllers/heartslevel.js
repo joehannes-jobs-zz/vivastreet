@@ -6,4 +6,4 @@ import Heartslevel from "src/classes/controllers/heartslevel";
 	name: "Heartslevel",
 	deps: ["LocalStorage", "$timeout"]
 })
-export default Heartslevel;
+export default class HeartslevelController extends Heartslevel {};

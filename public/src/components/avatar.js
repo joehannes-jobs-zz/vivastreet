@@ -9,8 +9,12 @@ import AvatarController from "src/controllers/avatar";
 	restrict: "E",
 	scope: {
 		"force": "@",
-        "team": "@",
-        "size": "@"
+		"team": "@",
+		"size": "@"
 	}
 })
-AvatarController;
+class AvatarComponent extends AvatarController {
+	constructor (...args) {
+		super(...args);
+	}
+};

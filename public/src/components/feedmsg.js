@@ -12,4 +12,4 @@ import FeedmsgController from "src/controllers/feedmsg";
 		"msg": "@"
 	}
 })
-FeedmsgController;
+class FeedmsgComponent extends FeedmsgController {};

@@ -1,5 +1,4 @@
 System.config({
-  baseUrl: window.__karma__ ? "base" : "./",
   defaultJSExtensions: true,
   transpiler: "babel",
   babelOptions: {
@@ -13,7 +12,7 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-
+  baseURL: ".",
   map: {
     "babel": "npm:babel-core@5.8.35",
     "babel-runtime": "npm:babel-runtime@5.8.35",

@@ -6,4 +6,8 @@ import Avatar from "src/classes/controllers/avatar";
 	name: "Avatar",
 	deps: ["LocalStorage"]
 })
-export default Avatar;
+export default class AvatarController extends Avatar {
+	constructor (...args) {
+		super(...args);
+	}
+};

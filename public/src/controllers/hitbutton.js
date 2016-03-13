@@ -6,4 +6,4 @@ import Hitbutton from "src/classes/controllers/hitbutton";
 	name: "Hitbutton",
 	deps: []
 })
-export default Hitbutton;
+export default class HitbuttonController extends Hitbutton {};

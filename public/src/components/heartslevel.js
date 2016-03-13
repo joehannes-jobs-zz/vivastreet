@@ -12,4 +12,4 @@ import HeartslevelController from "src/controllers/heartslevel";
         "lifes": "@"
 	}
 })
-HeartslevelController;
+class HeartslevelComponent extends HeartslevelController {};

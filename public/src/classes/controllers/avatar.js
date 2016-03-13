@@ -21,6 +21,8 @@ export default class Avatar extends EventedController {
 		});
 	}
 	"img.force::click" () {
+		console.log("clicked");
+		console.log(this.$scope);
 		if (this.$scope.active || this.$scope.team) {
 			return;
 		}

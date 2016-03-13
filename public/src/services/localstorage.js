@@ -6,4 +6,4 @@ import LocalStorage from "src/classes/services/localstorage";
     name: "LocalStorage",
     deps: []
 })
-LocalStorage;
+class LocalStorageService extends LocalStorage {};

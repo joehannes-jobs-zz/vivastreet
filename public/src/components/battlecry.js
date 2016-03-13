@@ -11,4 +11,4 @@ import BattlecryController from "src/controllers/battlecry";
 		"slogan": "@"
 	}
 })
-BattlecryController;
+class BattlecryComponent extends BattlecryController {};

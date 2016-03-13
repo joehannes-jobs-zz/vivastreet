@@ -6,4 +6,4 @@ import Imprint from "src/classes/controllers/imprint";
 	name: "Imprint",
 	deps: []
 })
-export default Imprint;
+export default class ImprintController extends Imprint {};

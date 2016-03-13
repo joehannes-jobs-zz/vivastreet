@@ -3,18 +3,18 @@ import routes from "./routes";
 
 import "./services/localstorage";
 
-import "./controllers/menu";
-import "./controllers/imprint";
+import "./components/menu";
+import "./components/imprint";
 
-import "./controllers/components/avatar";
-import "./controllers/components/battlecry";
-import "./controllers/components/heartslevel";
-import "./controllers/components/feedmsg";
-import "./controllers/components/hitbutton";
+import "./components/avatar";
+import "./components/battlecry";
+import "./components/heartslevel";
+import "./components/feedmsg";
+import "./components/hitbutton";
 
-import "./controllers/routes/setup";
-import "./controllers/routes/game";
-import "./controllers/routes/goodbye";
+import "./classes/routes/setup";
+import "./classes/routes/game";
+import "./classes/routes/goodbye";
 
 import "../styles/structure.sass!";
 import "../styles/components.sass!";

@@ -9,4 +9,4 @@ import ImprintController from "src/controllers/imprint";
 	template: tpl,
 	scope: {}
 })
-ImprintController;
+class ImprintComponent extends ImprintController {};

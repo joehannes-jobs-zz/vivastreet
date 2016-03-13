@@ -9,4 +9,4 @@ import HitbuttonController from "src/controllers/hitbutton";
 	restrict: "E",
 	scope: {}
 })
-HitbuttonController;
+class HitbuttonComponent extends HitbuttonController {};

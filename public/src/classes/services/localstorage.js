@@ -10,11 +10,11 @@ export default class LocalStorage extends Service {
 		this.fetch();
 	}
 	_getFromLocalStorage () {
-		var raw = (localStorage.getItem(LocalStorageService.STORAGE_ID) || "{}");
+		var raw = (localStorage.getItem(LocalStorage.STORAGE_ID) || "{}");
 		return JSON.parse(raw);
 	}
 	_saveToLocalStorage (game) {
-		localStorage.setItem(LocalStorageService.STORAGE_ID, JSON.stringify(game));
+		localStorage.setItem(LocalStorage.STORAGE_ID, JSON.stringify(game));
 	}
 
 	delete () {

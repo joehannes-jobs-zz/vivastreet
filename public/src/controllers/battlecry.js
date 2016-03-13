@@ -6,4 +6,4 @@ import Battlecry from "src/classes/controllers/battlecry";
 	name: "Battlecry",
 	deps: ["LocalStorage", "$state"]
 })
-export default Battlecry;
+export default class BattlecryController extends Battlecry {};

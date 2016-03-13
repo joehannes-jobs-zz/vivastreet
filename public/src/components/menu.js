@@ -9,4 +9,4 @@ import MenuController from "src/controllers/menu";
 	template: tpl,
 	scope: {}
 })
-MenuController;
+class MenuComponent extends MenuController {};
